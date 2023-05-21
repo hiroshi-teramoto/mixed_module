@@ -37,7 +37,7 @@ $M_4$ = Q[3];
 
 in the paper. 
 
-Finally, you are ready to compute comprehensive standard system for $(M_i)_{i \in \left\{1,2,3,4 \right\}}$. $M_1$ is supposed to have finite $K$-codimension. 
+Finally, you are ready to compute comprehensive standard system for $(M_i)_{i \in \{ 1,2,3,4 \}}$. $M_1$ is supposed to have finite $K$-codimension. 
 
 list Lg = cssm(X,eta,E,N,TR1K,Q);
 
