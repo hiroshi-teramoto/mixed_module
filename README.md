@@ -30,7 +30,7 @@ X[3] = ideal(0); // this correspond $X_3 = \emptyset$
 
 In the subsequent lines, $\eta$ in the paper (See 2. Setting in the paper) is computed for the given X[1], X[2], and X[3]. For example, if $X[1] \cap X[2] = X[3]$ holds, then eta[1,2] = 3.
 
-ideals $E$ and $N$ specify the entire range of parameters $V(E)\V(N)$ in which comprehensive standard system is computed.
+ideals $E$ and $N$ specify the entire range of parameters $V(E) \setminus V(N)$ in which comprehensive standard system is computed.
 
 In this example, 
 
