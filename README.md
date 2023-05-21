@@ -30,10 +30,10 @@ ideals $E$ and $N$ specify the entire range of parameters $V(E)\V(N)$ in which c
 
 In this example, 
 
-M_1 = TR1K;
-M_2 = Q[1];
-M_3 = Q[2];
-M_4 = Q[3];
+$M_1$ = TR1K;
+$M_2$ = Q[1];
+$M_3$ = Q[2];
+$M_4$ = Q[3];
 
 in the paper. 
 
@@ -42,15 +42,15 @@ Finally, you are ready to compute comprehensive standard system for $(M_i)_{i \i
 list Lg = cssm(X,eta,E,N,TR1K,Q);
 
 The format of Lg is as follows:
-[i]: information of mixed standard basis in the parameter range V(E_i)\V(N_i).
-  [i][1]: generators of E_i
-  [i][2]: generators of N_i
-  [i][3]: information of local cohomologies and standard basis of M_1 in the parameter range V(E_i)\V(N_i).
-    [i][3][1]: E_i
-    [i][3][2]: N_i
-    [i][3][3]: local cohomology of M_1
-    [i][3][4]: standard basis of M_1 (S^(1) in the paper)
-  [i][4][j]: S^(j+1) in the paper
+[i]: information of mixed standard basis in the parameter range $V(E_i)\V(N_i)$.
+  [i][1]: generators of $E_i$
+  [i][2]: generators of $N_i$
+  [i][3]: information of local cohomologies and standard basis of $M_1$ in the parameter range $V(E_i)\V(N_i)$.
+    [i][3][1]: $E_i$
+    [i][3][2]: $N_i$
+    [i][3][3]: local cohomology of $M_1$
+    [i][3][4]: standard basis of $M_1$ ($S^{(1)}$ in the paper)
+  [i][4][j]: $S^{(j+1)}$ in the paper
 
 
 
