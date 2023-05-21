@@ -19,7 +19,7 @@ ny = 2;
 ring R = (0,a), (x(1..nx),y(1..ny)), (M(imat),C);
 ```
 
-In this implementation, all the parameters in the ring, "a" in the example above, are treated as parameters in comprehensive standard system. To use the library, you need to specify the family of variables ${X_i}_{i \in J}$. In this implementation, $X_1$ is the set of all the variables in the base ring. In this example, that is {x(1..nx), y(1..ny)}. You need to specify $X_2$, $X_3$. In the current implementation, X[i-1] = X_i and the list of variables should be of type ideal. For example, 
+In this implementation, all the parameters in the ring, "a" in the example above, are treated as parameters in comprehensive standard system. To use the library, you need to specify the family of variables $(X_i)_{i \in J}$. In this implementation, $X_1$ is the set of all the variables in the base ring. In this example, that is {x(1..nx), y(1..ny)}. You need to specify $X_2$, $X_3$. In the current implementation, X[i-1] = X_i and the list of variables should be of type ideal. For example, 
 
 ```Singular
 list X = list();
