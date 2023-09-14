@@ -62,11 +62,15 @@ size(kbase_mixed(X,Lg[i]))-ny;
 ```
 in the code. Note that in this case, we want to compute the codimension of $M$ in $\langle x_1, x_2 \rangle \left( \mathbb{R} \left[ X_1 \right] \_{\langle X_1 \rangle} \right)^2$ and thus we subtracted `ny` which corresponds to the monomials $\left( 1, 0 \right)$ and $\left( 0, 1 \right)$.
 
-Lastly, combining the locally closed sets on which the codimension is the same, we obtain the desired decomposition. 
-```Singular
-
-```
-
+Lastly, combining the locally closed sets on which the codimension is the same, we obtain the desired decomposition. The function
+> ```Singular
+> addcons(Lcod[i][2])
+> ```
+> | Parameter | Description |
+> | --------- | ----------- |
+> | `Lcod[i][2]` | list of locally closed sets |
+> #### Output
+> simplified expression of union of the locally closed sets (For detail, refer to [Computing the Canonical Representation of Constructible Sets](https://link.springer.com/article/10.1007/s11786-016-0248-2) by Josep M. Brunat and Antonio Montes.
 
 
 
