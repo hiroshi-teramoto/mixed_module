@@ -72,6 +72,58 @@ Lastly, combining the locally closed sets on which the codimension is the same, 
 > #### Output
 > simplified expression of union of the locally closed sets (For detail, refer to [Computing the Canonical Representation of Constructible Sets](https://link.springer.com/article/10.1007/s11786-016-0248-2) by Josep M. Brunat and Antonio Montes.
 
+If you run this code, you will obtain the following output: 
+```Singular
+[1]:
+   [1]:
+      4
+   [2]:
+      [1]:
+         [1]:
+            _[1]=(c(4))
+            _[2]=(c(3))
+            _[3]=(c(2))
+            _[4]=(c(1))
+         [2]:
+            _[1]=1
+[2]:
+   [1]:
+      0
+   [2]:
+      [1]:
+         [1]:
+            _[1]=0
+         [2]:
+            _[1]=(-c(1)*c(4)+c(2)*c(3))
+[3]:
+   [1]:
+      1
+   [2]:
+      [1]:
+         [1]:
+            _[1]=(-c(1)*c(4)+c(2)*c(3))
+         [2]:
+            _[1]=(c(2)*c(4))
+            _[2]=(c(1)*c(4))
+            _[3]=(c(1)*c(3))
+[4]:
+   [1]:
+      2
+   [2]:
+      [1]:
+         [1]:
+            _[1]=(c(2)*c(4))
+            _[2]=(c(1)*c(4))
+            _[3]=(c(2)*c(3))
+            _[4]=(c(1)*c(3))
+         [2]:
+            _[1]=(c(4))
+            _[2]=(c(3))
+            _[3]=(c(2))
+            _[4]=(c(1))
+
+```
+
 
 
 
