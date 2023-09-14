@@ -53,14 +53,12 @@ Finally, you are ready to compute comprehensive standard system for $(M_i)_{i \i
 ```Singular
 list Lg = cssm(X,eta,E,N,TR1K,Q);
 ```
-
 ### Parameters
 - `X`: family of variables (Note that X[i-1] = $X_i$ in the paper)
 - `eta` ( $=\eta$ ): $(\left| J \right|-1) \times (\left| J \right|-1)$ matrix of positive integer entries that satisfies $X[i] \cap X[j] = X[\eta[i,j]]$ for all $i, j$
 - `E`, `N`: ideals to specify the parameter range in which comprehensive standard system is computed. $V \left( E \right) \setminus V \left( N \right)$ is the resulting range.
 - `TR1K`: $M_1$ in the paper.
 - `Q`: list of modules (`Q[i]` corresponds to $M_{i+1}$ in the paper for $i \ge 2$)
-
 ### Outputs
 The format of Lg is as follows:
 ```Singular
@@ -79,6 +77,16 @@ The comprehensive mixed-standard system `Lg` can be used in the following functi
 ```Singular
 reduce_mixed_with_E(list X, vector p, module Nc, list Q, ideal E)
 ```
+### Parameters
+- `X`: family of variables (Note that X[i-1] = $X_i$ in the paper)
+- `p`: input vector to be reduced
+- `Nc`: list of local cohomology of $M_1$
+- `Q`: list of mixed standard basis $S^{(j+1)}$ for $j \ge 1$
+- `E`: ideal in the polynomial ring of parameters (`Nc` and `Q` is defined on the parameter range $V(E) \setminus V(N)$.
+### Output
+- the reduced normal form of `p`
+### Example
+Suppose `p` is a vector you want to reduce. If you want to do that in the $i$-th parameter range $V(E_i)\V(N_i)$, you can compute that by the command `reduce_mixed_with_E(X,p,Lg[i][3][3],Lg[i][4],Lg[i][3])`.
 
 ```Singular
 kbase_mixed(list X, list Lgi)
