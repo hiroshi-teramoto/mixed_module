@@ -3,7 +3,7 @@ Implementation of Algorithms in the paper [Comprehensive Standard System for Gen
 
 To use the libraries, download all the files and place them into a single directory. You will need Singular installed on your machine. We have prepared three examples to demonstrate the libraries:
 
-* [example_codimension_transverse_fold.exe](https://github.com/hiroshi-teramoto/mixed_module/main/example_codimension_transverse_fold.md)
+* [example_codimension_transverse_fold.exe](https://github.com/hiroshi-teramoto/mixed_module/example_codimension_transverse_fold.md)
   - See 3.1.1 Example (transverse fold) in the paper
 * example_codimension_beak_to_beak.exe
   - See 3.1.2 Example (beak to beak) in the paper
