@@ -1,4 +1,4 @@
-Let us explain how to use the library in example_codimension_transverse_fold.exe (See 3.1.1 Example (transverse fold) in the paper).
+Let us explain how to use the library by taking example_codimension_transverse_fold.exe (See 3.1.1 Example (transverse fold) in the paper) as an example.
 
 In this example, the definition of the base ring is as follows: 
 
