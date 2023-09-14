@@ -28,14 +28,12 @@ ideal N = 1; // ideal containing 1, that is, R
 
 Then, $V(E)$ is the whole parameter range and $V(N) = \emptyset$ holds, and thus $V(E) \setminus V(N)$ is the whole parameter range. 
 
-In this example, 
+In the subsequent lines, generators of each component of the mixed module is specified as follows (expression is lenghthy so please refer to the paper for detail) :
 
 $M_1$ = TR1K;
 $M_2$ = Q[1];
 $M_3$ = Q[2];
 $M_4$ = Q[3];
-
-in the paper. 
 
 Finally, you are ready to compute comprehensive standard system for $(M_i)_{i \in \{ 1,2,3,4 \}}$. $M_1$ is supposed to have finite $K$-codimension. You can compute that by the following command (implemented in cssm_multi_v2.lib).
 
