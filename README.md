@@ -80,7 +80,7 @@ reduce_mixed_with_E(list X, vector p, module Nc, list Q, ideal E)
 ### Parameters
 - `X`: family of variables (Note that X[i-1] = $X_i$ in the paper)
 - `p`: input vector to be reduced
-- `Nc`: list of local cohomology of $M_1$
+- `Nc`: local cohomology of $M_1$
 - `Q`: list of mixed standard basis $S^{(j+1)}$ for $j \ge 1$
 - `E`: ideal in the polynomial ring of parameters (`Nc` and `Q` is defined on the parameter range $V(E) \setminus V(N)$.
 ### Output
