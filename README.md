@@ -10,4 +10,4 @@ To use the libraries, download all the files and place them into a single direct
 * example_divergent_diagram_j1.exe
   - See 4.1.1 Example: Mather's lemma
 
-We assume you are familiar with Singular. If not please refer to the singular manual.
+We assume you are familiar with Singular. If not please refer to [the singular manual](https://www.singular.uni-kl.de/Manual/4-3-2/index.htm#SEC_Top).
