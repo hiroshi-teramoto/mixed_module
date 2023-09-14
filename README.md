@@ -74,5 +74,13 @@ The format of Lg is as follows:
   [i][4][j]: $S^{(j+1)}$ in the paper
  ```
 
+The comprehensive mixed-standard system `Lg` can be used in the following functions:
+```Singular
+reduce_mixed_with_E(list X, vector p, module Nc, list Q, ideal E)
+```
+
+```Singular
+kbase_mixed(list X, list Lgi)
+```
 
 
