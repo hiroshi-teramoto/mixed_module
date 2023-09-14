@@ -54,6 +54,13 @@ Finally, you are ready to compute comprehensive standard system for $(M_i)_{i \i
 list Lg = cssm(X,eta,E,N,TR1K,Q);
 ```
 
+## Parameters
+- `X`: family of variables (Note that X[i-1] = $X_i$ in the paper)
+- `eta` ( $=\eta$ ): $\left| J \right| \times \left| J \right|$ matrix of positive integer entries that satisfies $X[i] \cap X[j] = X[\eta[i,j]]$ for all $i, j \in J$
+- `E`, `N`: ideals to specify the parameter range in which comprehensive standard system is computed. $V \left( E \right) \setminus V \left( N \right)$ is the resulting range.
+- `TR1K`: $M_1$ in the paper.
+- `Q`: list of modules (`Q[i]` corresponds to $M_{i+1}$ in the paper for $i \ge 2$)
+
 The format of Lg is as follows:
 ```Singular
 [i]: information of mixed standard basis in the parameter range $V(E_i)\V(N_i)$.
