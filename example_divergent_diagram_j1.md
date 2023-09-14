@@ -12,7 +12,7 @@ The group acting on the divergent diagram $\mathcal{G}$ induces the Lie group $j
 $$\dim_{\mathbb{R}} T_{j^1 f} \left( j^1 \mathcal{G} \cdot j^1 f \right)$$
 is constant for each component. 
 
-By the isomorphism in the paper (4.1), we obtain 
+By the isomorphism as an $\mathbb{R}$-vector spaces in the paper (4.1), we obtain 
 
 $$j^1 \mathcal{M}_2 \mathcal{E} \_2 \^2 / T \_{j^1 f} \left( j^1 \mathcal{G} \cdot j^1 f \right) \cong \langle x_1, x_2 \rangle \left( \mathbb{R} \left[ X_1 \right] \_{\langle X_1 \rangle} \right)^2 / M$$
 
@@ -24,7 +24,9 @@ $$j^1 \mathcal{M}_2 \mathcal{E} \_2 \^2 / T \_{j^1 f} \left( j^1 \mathcal{G} \cd
 - $X_4 = \emptyset$,
 and
 - $M = \sum_{j \in I} M_j$
-  - Expressions of $M_j \; \left( j \in I \right)$ are lengthy and please refer to the paper.
+  - Expressions of $M_j \ \left( j \in I \right)$ are lengthy and please refer to the paper for details.
+
+By using the isomorphism, the computation of the codimension of the tangent space $T \_{j^1 f} \left( j^1 \mathcal{G} \cdot j^1 f \right)$ is reduced to that of the mixed-module $M$. The latter can be computed by using the comprehensive standard system for mixed-module. 
   
 
 
