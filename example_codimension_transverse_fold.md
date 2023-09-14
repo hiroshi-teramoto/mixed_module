@@ -63,10 +63,10 @@ Finally, you are ready to compute comprehensive standard system for $(M_i)_{i \i
 > #### Outputs
 > The format of Lg is as follows:
 > ```Singular
-> [i]: information of mixed standard basis in the parameter range $V(E_i) \setminus V(N_i)$.
+> [i]: information of mixed standard basis in the parameter range $V(E_i)\V(N_i)$.
 >  [i][1]: generators of $E_i$
 >  [i][2]: generators of $N_i$
->  [i][3]: information of local cohomologies and standard basis of $M_1$ in the parameter range $V \left( E_i \right) \setminus V \left( N_i \right)$.
+>  [i][3]: information of local cohomologies and standard basis of $M_1$ in the parameter range $V(E_i)\V(N_i)$.
 >    [i][3][1]: $E_i$
 >    [i][3][2]: $N_i$
 >    [i][3][3]: local cohomology of $M_1$
