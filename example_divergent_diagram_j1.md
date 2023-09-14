@@ -43,13 +43,14 @@ for(i=1;i<=ny;i++){
 X[ny+1] = ideal(0);
 ```
 
-In the subsequent lines, we 
+In the subsequent lines, we (for detail, see the code.)
 - compute $\eta$,
 - define the ideals $E$ and $N$,
 - define $f$,
-- define `TR1K` (=$M_1$),
+- define `TR1K` (= $M_1$),
 - define `Q` (list of $M_2, M_3, M_4$, where `Q[i]` = $M_{i+1}$)
-(for detail, see the code.).
+
+
 
 
 
