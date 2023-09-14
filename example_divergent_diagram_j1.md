@@ -10,7 +10,7 @@ Through that expression, we can see that the $1$-jet space is coordinated by $c_
 
 The group acting on the divergent diagram $\mathcal{G}$ induces the Lie group $j^1 \mathcal{G}$ acting on the $1$-jet space and we want to decompose the $1$-jet space into distinct orbits of the induced action. Since the dimension of every orbit is constant under the setting, we first decompose the $1$-jet space into several components so that 
 $$\dim_{\mathbb{R}} T_{j^1 f} \left( j^1 \mathcal{G} \cdot j^1 f \right)$$
-is constant for each component. 
+is constant for each component. This demonstration is to explain how to do that by using the library. 
 
 By the isomorphism as an $\mathbb{R}$-vector spaces in the paper (4.1), we obtain 
 
@@ -58,6 +58,13 @@ For the detail of `cssm`, please refer to [example_codimension_transverse_fold.e
 
 `cssm` decomposes the parameter space $\mathbb{C}^4$ into several locally closed sets $V \left( E_i \right) \setminus V \left( N_i \right)$ and the set of the standard system for mixed-module that is valid on each locally closed set. The codimension of the quotient space on each locally closed set is constant and it can be computed by 
 ```Singular
+size(kbase_mixed(X,Lg[i]))-ny;
+```
+in the code. Note that in this case, we want to compute the codimension of $M$ in $\langle x_1, x_2 \rangle \left( \mathbb{R} \left[ X_1 \right] \_{\langle X_1 \rangle} \right)^2$ and thus we subtracted `ny` which corresponds to the monomials $\left( 1, 0 \right)$ and $\left( 0, 1 \right)$.
+
+Lastly, combining the locally closed sets on which the codimension is the same, we obtain the desired decomposition. 
+```Singular
+
 ```
 
 
