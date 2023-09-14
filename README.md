@@ -7,7 +7,7 @@ To use the libraries, download all the files and place them into a single direct
   - See 3.1.1 Example (transverse fold) in the paper
 * example_codimension_beak_to_beak.exe
   - See 3.1.2 Example (beak to beak) in the paper
-* example_divergent_diagram_j1.exe
+* [example_divergent_diagram_j1.exe](https://github.com/hiroshi-teramoto/mixed_module/blob/main/example_divergent_diagram_j1.md)
   - See 4.1.1 Example: Mather's lemma
 
 We assume you are familiar with Singular. If not please refer to [the singular manual](https://www.singular.uni-kl.de/Manual/4-3-2/index.htm#SEC_Top).
