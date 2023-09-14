@@ -62,7 +62,7 @@ list Lg = cssm(X,eta,E,N,TR1K,Q);
 ### Outputs
 The format of Lg is as follows:
 ```Singular
-[i]: information of mixed standard basis in the parameter range $V(E_i)\V(N_i)$.
+[i]: information of mixed standard basis in the parameter range $V(E_i) \setminus V(N_i)$.
   [i][1]: generators of $E_i$
   [i][2]: generators of $N_i$
   [i][3]: information of local cohomologies and standard basis of $M_1$ in the parameter range $V(E_i)\V(N_i)$.
@@ -86,7 +86,7 @@ reduce_mixed_with_E(list X, vector p, module Nc, list Q, ideal E)
 ### Output
 - the reduced normal form of `p`
 ### Example
-Suppose `p` is a vector you want to reduce. If you want to do that in the $i$-th parameter range $V(E_i)\V(N_i)$, you can compute that by the command `reduce_mixed_with_E(X,p,Lg[i][3][3],Lg[i][4],Lg[i][3])`.
+Suppose `p` is a vector you want to reduce. If you want to do that in the $i$-th parameter range $V(E_i) \setminus V(N_i)$, you can compute that by the command `reduce_mixed_with_E(X,p,Lg[i][3][3],Lg[i][4],Lg[i][3])`.
 
 ```Singular
 kbase_mixed(list X, list Lgi)
