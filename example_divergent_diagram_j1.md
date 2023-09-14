@@ -13,8 +13,19 @@ $$\dim_{\mathbb{R}} T_{j^1 f} \left( j^1 \mathcal{G} \cdot j^1 f \right)$$
 is constant for each component. 
 
 By the isomorphism in the paper (4.1), we obtain 
-$$j^1 \mathcal{M}_2 \mathcal{E}_2^2 / T_{j^1 f} \left( j^1 \mathcal{G} \cdot j^1 f \right) \cong \left( \langle x_1, x_2 \rangle \mathbb{R} \left[ X_1 \right]_{\langle X_1 \rangle}^2 / M$$
-(Note that the expression in (4.1) in the paper contains typo).
+
+$$j^1 \mathcal{M}_2 \mathcal{E} \_2 \^2 / T \_{j^1 f} \left( j^1 \mathcal{G} \cdot j^1 f \right) \cong \langle x_1, x_2 \rangle \left( \mathbb{R} \left[ X_1 \right] \_{\langle X_1 \rangle} \right)^2 / M$$
+
+(Note that the right hand side of (4.1) should have $\langle x_1, x_2 \rangle$.), where 
+- $I = \lbrace 1, 2, 3, 4 \rbrace$,
+- $X_1 = \lbrace x_1, x_2, y_1, y_2 \rbrace$,
+- $X_2 = \lbrace y_1 \rbrace$,
+- $X_3 = \lbrace y_2 \rbrace$,
+- $X_4 = \emptyset$,
+and
+- $M = \sum_{j \in I} M_j$
+  - Expressions of $M_j \; \left( j \in I \right)$ are lengthy and please refer to the paper.
+  
 
 
 
