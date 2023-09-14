@@ -27,6 +27,21 @@ and
   - Expressions of $M_j \ \left( j \in I \right)$ are lengthy and please refer to the paper for details.
 
 By using the isomorphism, the computation of the codimension of the tangent space $T \_{j^1 f} \left( j^1 \mathcal{G} \cdot j^1 f \right)$ is reduced to that of the mixed-module $M$. The latter can be computed by using the comprehensive standard system for mixed-module. 
+
+First, let us define a ring having parameters `c(1)`, `c(2)`, `c(3)`, and `c(4)` which correspond to $c_1, c_2, c_3$, and $c_4$, respectively, with variables $\lbrace x_1, x_2, y_1, y_2 \rbrace$.
+```Singular
+ring R = (0,c(1..4)), (x(1..nx),y(1..ny)), (M(imat),C);
+```
+
+Then, let us define a family of variables `X` as:
+```Singular
+list X = list();
+for(i=1;i<=ny;i++){
+	X[i] = ideal(y(i));
+	X[i] = std(X[i]);
+}
+X[ny+1] = ideal(0);
+```
   
 
 
