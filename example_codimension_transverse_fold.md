@@ -65,7 +65,7 @@ The format of Lg is as follows:
 [i]: information of mixed standard basis in the parameter range $V(E_i) \setminus V(N_i)$.
   [i][1]: generators of $E_i$
   [i][2]: generators of $N_i$
-  [i][3]: information of local cohomologies and standard basis of $M_1$ in the parameter range $V(E_i)\V(N_i)$.
+  [i][3]: information of local cohomologies and standard basis of $M_1$ in the parameter range $V \left( E_i \right) \setminus V \left( N_i \right)$.
     [i][3][1]: $E_i$
     [i][3][2]: $N_i$
     [i][3][3]: local cohomology of $M_1$
@@ -84,7 +84,7 @@ reduce_mixed_with_E(list X, vector p, module Nc, list Q, ideal E)
 - `Q`: list of mixed standard basis $S^{(j+1)}$ for $j \ge 1$
 - `E`: ideal in the polynomial ring of parameters (`Nc` and `Q` is defined on the parameter range $V(E) \setminus V(N)$.
 ### Output
-- the reduced normal form of `p`, that is, $$\mathrm{NF} \_{\textnormal{tail}} \left( p \middle| \left( S^{\left( j \right)} \right)_{j \in J} \right)$$
+- the reduced normal form of `p`, that is, $\mathrm{NF} \_{\textnormal{tail}} \left( p \middle| \left( S^{\left( j \right)} \right)_{j \in J} \right)$
 ### Example
 Suppose `p` is a vector you want to reduce. If you want to do that in the $i$-th parameter range $V(E_i) \setminus V(N_i)$, you can compute that by the command `reduce_mixed_with_E(X,p,Lg[i][3][3],Lg[i][4],Lg[i][3])`.
 
