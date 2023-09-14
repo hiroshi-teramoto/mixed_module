@@ -23,8 +23,7 @@ $$j^1 \mathcal{M}_2 \mathcal{E} \_2 \^2 / T \_{j^1 f} \left( j^1 \mathcal{G} \cd
 - $X_3 = \lbrace y_2 \rbrace$,
 - $X_4 = \emptyset$,
 and
-- $M = \sum_{j \in I} M_j$
-  - Expressions of $M_j \ \left( j \in I \right)$ are lengthy and please refer to the paper for details.
+- $M = \sum_{j \in I} M_j$ (Expressions of $M_j \ \left( j \in I \right)$ are lengthy and please refer to the paper for details.)
 
 By using the isomorphism, the computation of the codimension of the tangent space $T \_{j^1 f} \left( j^1 \mathcal{G} \cdot j^1 f \right)$ is reduced to that of the mixed-module $M$. The latter can be computed by using the comprehensive standard system for mixed-module. 
 
