@@ -32,7 +32,7 @@ X[3] = ideal(0); // this correspond $X_3 = \emptyset$
 
 In the subsequent lines, $\eta$ in the paper (See 2. Setting in the paper) is computed for the given X[1], X[2], and X[3]. For example, if $X[1] \cap X[2] = X[3]$ holds, then eta[1,2] = 3.
 
-Ideals $E$ and $N$ specify the entire range of parameters $V(E) \setminus V(N)$ in which comprehensive standard system is computed. Since the ideals are supposed to specify parameter ranges, they should only contain parameters as variables. If you want to compute a comprehensive standard system for all the parameter range, set 
+Ideals $E$ and $N$ specify the entire range of parameters $V(E) \setminus V(N)$ in which comprehensive standard system is computed, where $V \left( E \right)$ and $V \left( N \right)$ are the zero sets of $E$ and $N$, respectively. Since the ideals are supposed to specify parameter ranges, they should only contain parameters as variables. If you want to compute a comprehensive standard system for all the parameter range, set 
 
 ```Singular
 ideal E = 0; // zero ideal
@@ -57,7 +57,7 @@ Finally, you are ready to compute comprehensive standard system for $(M_i)_{i \i
 > | --------- | ----------- |
 > | `X` | family of variables (Note that X[i-1] = $X_i$ in the paper) |
 > | `eta` ( $\eta$ ) | matrix of positive integer entries that satisfies $X[i] \cap X[j] = X[\eta[i,j]]$ for all $i, j$ |
-> | `E`, `N` | ideals to specify the parameter range in which comprehensive standard system is computed. $V \left( E \right) \setminus V \left( N \right)$ is the resulting range |
+> | `E`, `N` | ideals to specify the parameter range $V \left( E \right) \setminus V \left( N \right)$ in which comprehensive standard system is computed |
 > | `TR1K` | $M_1$ in the paper |
 > | `Q` | list of modules (`Q[i]` corresponds to $M_{i+1}$ in the paper for $i \ge 2$) |
 > #### Outputs
