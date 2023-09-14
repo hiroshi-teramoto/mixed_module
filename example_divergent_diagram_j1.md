@@ -134,7 +134,7 @@ If you run this code, you will obtain the following output, where the output for
 ```
 
 From this result, we obtain 
-| Constructible Set | Codimensnion |
+| Constructible Set | Codimension of $T \_{j^1 f} \left( j^1 \mathcal{G} \cdot j^1 f \right)$ |
 | ----------------- | ------------ |
 | $c_1 = c_2 = c_3 = c_4 = 0$ | $4$ |
 | $c_1 c_4 - c_2 c_3 \neq 0$ | $0$ |
