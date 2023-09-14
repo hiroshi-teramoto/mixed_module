@@ -72,7 +72,17 @@ Lastly, combining the locally closed sets on which the codimension is the same, 
 > #### Output
 > simplified expression of union of the locally closed sets (For detail, refer to [Computing the Canonical Representation of Constructible Sets](https://link.springer.com/article/10.1007/s11786-016-0248-2) by Josep M. Brunat and Antonio Montes.
 
-If you run this code, you will obtain the following output: 
+If you run this code, you will obtain the following output, where the output format is 
+```Singular
+> The format of Lg is as follows:
+> ```Singular
+> [i]: $i$-th decomposition of the $1$-jet space on which the codimension is constant
+>  [i][1]: codimension of the tangent space
+>  [i][2]: representation of constructible set (union of V(E_{ij})\V(N_{ij}) for j)
+>    [i][j][1]: $E_{ij}$
+>    [i][j][2]: $N_{ij}$
+> ```
+
 ```Singular
 [1]:
    [1]:
@@ -121,8 +131,17 @@ If you run this code, you will obtain the following output:
             _[2]=(c(3))
             _[3]=(c(2))
             _[4]=(c(1))
-
 ```
+
+From this result, we obtain 
+| Constructible Set | Codimensnion |
+| ----------------- | ------------ |
+| $c_1 = c_2 = c_3 = c_4 = 0$ | $4$ |
+| $c_1 c_4 - c_2 c_3 \neq 0$ | $0$ |
+| $c_1 c_4 - c_2 c_3 = 0$ and ($c_2 c_4 \neq 0$ or $c_1 c_4 \neq 0$ or $c_1 c_3 \neq 0$)  | $1$ |
+| $c_2 c_4 = c_1 c_4 = c_2 c_3 = c_1 c_3 = 0$ and ($c_1 \neq 0$ or $c_2 \neq 0$ or $c_3 \neq 0$ or $c_4 \neq 0$)  | $2$ |
+
+
 
 
 
