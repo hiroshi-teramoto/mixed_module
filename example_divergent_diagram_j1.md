@@ -56,6 +56,10 @@ list Lg = cssm(X,eta,E,N,TR1K,Q);
 ```
 For the detail of `cssm`, please refer to [example_codimension_transverse_fold.exe](https://github.com/hiroshi-teramoto/mixed_module/blob/main/example_codimension_transverse_fold.md) or [the code](https://github.com/hiroshi-teramoto/mixed_module/blob/main/cssm_multi_v2.lib).
 
+`cssm` decomposes the parameter space $\mathbb{C}^4$ into several locally closed sets $V \left( E_i \right) \setminus V \left( N_i \right)$ and the set of the standard system for mixed-module that is valid on each locally closed set. The codimension of the quotient space on each locally closed set is constant and it can be computed by 
+```Singular
+```
+
 
 
 
