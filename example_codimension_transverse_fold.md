@@ -37,7 +37,7 @@ $M_4$ = Q[3];
 
 in the paper. 
 
-Finally, you are ready to compute comprehensive standard system for $(M_i)_{i \in \{ 1,2,3,4 \}}$. $M_1$ is supposed to have finite $K$-codimension. 
+Finally, you are ready to compute comprehensive standard system for $(M_i)_{i \in \{ 1,2,3,4 \}}$. $M_1$ is supposed to have finite $K$-codimension. You can compute that by the following command (implemented in cssm_multi_v2.lib).
 
 ```Singular
 list Lg = cssm(X,eta,E,N,TR1K,Q);
@@ -62,7 +62,7 @@ The format of Lg is as follows:
   [i][4][j]: $S^{(j+1)}$ in the paper
  ```
 
-The comprehensive mixed-standard system `Lg` can be used in the following functions:
+The comprehensive mixed-standard system `Lg` can be used in the following functions implemented in cssm_multi_v2.lib:
 ```Singular
 reduce_mixed_with_E(list X, vector p, module Nc, list Q, ideal E)
 ```
