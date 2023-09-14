@@ -21,7 +21,7 @@ $$
 
 This matrix specifies the negative degree lexicographical order satisfying $x_1 \prec x_2 \prec y_1 \prec y_2$. For the detail of the matrix ordering, please refer to [B.2.6. Matrix orderings](https://www.singular.uni-kl.de/Manual/4-0-3/sing_896.htm). The command `(M(imat), C)` in the end of the ring definition specifies the module ordering on the top of the monomial ordering. Specifically, `C` represents the term over position ordering satisfying $\left( 1, 0 \right) \prec \left( 0, 1 \right)$. For detail, please refer to [3.3.3 Term orderings](https://www.singular.uni-kl.de/Manual/4-0-3/sing_31.htm).
 
-First, you need to specify the family of variables $(X_i)_{i \in J}$ characterizing the structure of a mixed-module you want to manipulate. In this implementation, $X_1$ is the set of all the variables in the base ring. In this example, that is {x(1..nx), y(1..ny)}, where x(i) and y(j) correspond to $x_i$ and $y_i$ in the paper. You need to specify $X_2$, $X_3$. In the current implementation, X[i-1] = $X_i$ and the list of variables should be of type ideal. For example, 
+First, you need to specify the family of variables $(X_i)_{i \in J}$ characterizing the structure of a mixed-module you want to manipulate. In this implementation, $X_1$ is the set of all the variables in the base ring. In this example, that is {x(1..nx), y(1..ny)}, where x(i) and y(j) correspond to $x_i$ and $y_i$ in the paper. You need to specify $X_2$, $X_3$, and $X_4$. In the current implementation, X[i-1] = $X_i$ and the list of variables should be of type ideal. For example, 
 
 ```Singular
 list X = list();
