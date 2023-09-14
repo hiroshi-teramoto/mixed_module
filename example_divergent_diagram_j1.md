@@ -8,7 +8,9 @@ $$j^1 f_2 \left( x \right) = c_3 x_1 + c_4 x_2 + \mathcal{M}_2^2 \mathcal{E}_2^2
 
 Through that expression, we can see that the $1$-jet space is coordinated by $c_1, c_2, c_3, c_4 \in \mathbb{R}$.
 
-The action to the divergent diagram induces the Lie group action in the $1$-jet space and we want to decompose the $1$-jet space into distinct orbits of the induced action.
+The group acting on the divergent diagram $\mathcal{G}$ induces the Lie group $j^1 \mathcal{G}$ acting on the $1$-jet space and we want to decompose the $1$-jet space into distinct orbits of the induced action. Since the dimension of every orbit is constant under the setting, we first decompose the $1$-jet space into several components so that 
+$$\dim_{\mathbb{R}} T_{j^1 f} \left( j^1 \mathcal{G} \cdot j^1 f \right)$$
+is constant for each component.
 
 
 
