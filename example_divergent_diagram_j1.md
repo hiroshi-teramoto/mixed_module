@@ -141,7 +141,7 @@ From this result, we obtain
 | $c_1 c_4 - c_2 c_3 = 0$ and ($c_2 c_4 \neq 0$ or $c_1 c_4 \neq 0$ or $c_1 c_3 \neq 0$)  | $1$ |
 | $c_2 c_4 = c_1 c_4 = c_2 c_3 = c_1 c_3 = 0$ and ($c_1 \neq 0$ or $c_2 \neq 0$ or $c_3 \neq 0$ or $c_4 \neq 0$)  | $2$ |
 
-
+This provide the decomposition of $\mathbb{C}^4$. The decomposition in real can be obtained just projecting the constructible sets to $\mathbb{R}^4$, since all the algorithms in this implementation are based upon arithmetic operations in the ground field only and thus if the scalars in the input data are contained in $\mathbb{R}$, then all the scalars in the output also lie in $\mathbb{R}$. 
 
 
 
