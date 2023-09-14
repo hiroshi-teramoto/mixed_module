@@ -88,7 +88,7 @@ The comprehensive mixed-standard system `Lg` can be used in the following functi
 > #### Output
 > - the reduced normal form of `p`, that is, $\mathrm{NF} \_{\textnormal{tail}} \left( p \middle| \left( S^{\left( j \right)} \right)_{j \in J} \right)$ in the paper
 > #### Example
-> Suppose `p` is a vector you want to reduce. If you want to do that in the $i$-th parameter range $V(E_i) \setminus V(N_i)$, you can compute that by the command `reduce_mixed_with_E(X,p,Lg[i][3][3],Lg[i][4],Lg[i][3])`.
+> Suppose `p` is a vector you want to reduce by the comprehensive standard system of the $i$-th parameter range, that is, `Lg[i]`. If you want to do that in the $i$-th parameter range $V(E_i) \setminus V(N_i)$, you can compute that by the command `reduce_mixed_with_E(X,p,Lg[i][3][3],Lg[i][4],Lg[i][3])`.
 
 > ```Singular
 > kbase_mixed(list X, list Lgi)
