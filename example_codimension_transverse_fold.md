@@ -50,51 +50,54 @@ $M_4$ = Q[3];
 
 Finally, you are ready to compute comprehensive standard system for $(M_i)_{i \in \{ 1,2,3,4 \}}$. $M_1$ is supposed to have finite $K$-codimension. You can compute that by the following command (implemented in cssm_multi_v2.lib).
 
-```Singular
-list Lg = cssm(X,eta,E,N,TR1K,Q);
-```
-### Parameters
-- `X`: family of variables (Note that X[i-1] = $X_i$ in the paper)
-- `eta` ( $=\eta$ ): $(\left| J \right|-1) \times (\left| J \right|-1)$ matrix of positive integer entries that satisfies $X[i] \cap X[j] = X[\eta[i,j]]$ for all $i, j$
-- `E`, `N`: ideals to specify the parameter range in which comprehensive standard system is computed. $V \left( E \right) \setminus V \left( N \right)$ is the resulting range.
-- `TR1K`: $M_1$ in the paper.
-- `Q`: list of modules (`Q[i]` corresponds to $M_{i+1}$ in the paper for $i \ge 2$)
-### Outputs
-The format of Lg is as follows:
-```Singular
-[i]: information of mixed standard basis in the parameter range $V(E_i) \setminus V(N_i)$.
-  [i][1]: generators of $E_i$
-  [i][2]: generators of $N_i$
-  [i][3]: information of local cohomologies and standard basis of $M_1$ in the parameter range $V \left( E_i \right) \setminus V \left( N_i \right)$.
-    [i][3][1]: $E_i$
-    [i][3][2]: $N_i$
-    [i][3][3]: local cohomology of $M_1$
-    [i][3][4]: standard basis of $M_1$ ($S^{(1)}$ in the paper)
-  [i][4][j]: $S^{(j+1)}$ in the paper
- ```
+> ```Singular
+> list Lg = cssm(X,eta,E,N,TR1K,Q);
+> ```
+> | Parameter | Description |
+> | --------- | ----------- |
+> | `X` | family of variables (Note that X[i-1] = $X_i$ in the paper) |
+> | `eta` ( $=\eta$ ) | $(\left| J \right|-1) \times (\left| J \right|-1)$ matrix of positive integer entries that satisfies $X[i] \cap X[j] = X[\eta[i,j]]$ for all $i, j$ |
+> | `E`, `N` | ideals to specify the parameter range in which comprehensive standard system is computed. $V \left( E \right) \setminus V \left( N \right)$ is the resulting range |
+> | `TR1K` | $M_1$ in the paper |
+> | `Q` | list of modules (`Q[i]` corresponds to $M_{i+1}$ in the paper for $i \ge 2$) |
+> #### Outputs
+> The format of Lg is as follows:
+> ```Singular
+> [i]: information of mixed standard basis in the parameter range $V(E_i) \setminus V(N_i)$.
+>  [i][1]: generators of $E_i$
+>  [i][2]: generators of $N_i$
+>  [i][3]: information of local cohomologies and standard basis of $M_1$ in the parameter range $V \left( E_i \right) \setminus V \left( N_i \right)$.
+>    [i][3][1]: $E_i$
+>    [i][3][2]: $N_i$
+>    [i][3][3]: local cohomology of $M_1$
+>    [i][3][4]: standard basis of $M_1$ ($S^{(1)}$ in the paper)
+>  [i][4][j]: $S^{(j+1)}$ in the paper
+> ```
 
 The comprehensive mixed-standard system `Lg` can be used in the following functions implemented in cssm_multi_v2.lib:
-```Singular
-reduce_mixed_with_E(list X, vector p, module Nc, list Q, ideal E)
-```
-### Parameters
-- `X`: family of variables (Note that X[i-1] = $X_i$ in the paper)
-- `p`: input vector to be reduced
-- `Nc`: local cohomology of $M_1$
-- `Q`: list of mixed standard basis $S^{(j+1)}$ for $j \ge 1$
-- `E`: ideal in the polynomial ring of parameters (`Nc` and `Q` is defined on the parameter range $V(E) \setminus V(N)$.
-### Output
-- the reduced normal form of `p`, that is, $\mathrm{NF} \_{\textnormal{tail}} \left( p \middle| \left( S^{\left( j \right)} \right)_{j \in J} \right)$ in the paper
-### Example
-Suppose `p` is a vector you want to reduce. If you want to do that in the $i$-th parameter range $V(E_i) \setminus V(N_i)$, you can compute that by the command `reduce_mixed_with_E(X,p,Lg[i][3][3],Lg[i][4],Lg[i][3])`.
+> ```Singular
+> reduce_mixed_with_E(list X, vector p, module Nc, list Q, ideal E)
+> ```
+> | Parameter | Description |
+> | --------- | ----------- |
+> | `X` | family of variables (Note that X[i-1] = $X_i$ in the paper) |
+> | `p` | input vector to be reduced |
+> | `Nc` | local cohomology of $M_1$ |
+> | `Q` | list of mixed standard basis $S^{(j+1)}$ for $j \ge 1$ |
+> | `E` | ideal in the polynomial ring of parameters (`Nc` and `Q` is defined on the parameter range $V(E) \setminus V(N)$ |
+> #### Output
+> - the reduced normal form of `p`, that is, $\mathrm{NF} \_{\textnormal{tail}} \left( p \middle| \left( S^{\left( j \right)} \right)_{j \in J} \right)$ in the paper
+> #### Example
+> Suppose `p` is a vector you want to reduce. If you want to do that in the $i$-th parameter range $V(E_i) \setminus V(N_i)$, you can compute that by the command `reduce_mixed_with_E(X,p,Lg[i][3][3],Lg[i][4],Lg[i][3])`.
 
-```Singular
-kbase_mixed(list X, list Lgi)
-```
-### Parameters
-- `X`: family of variables (Note that X[i-1] = $X_i$ in the paper)
-- `Lgi`: list of mixed standard basis in the $i$-th parameter range (`Lg[i]`)
-### Outputs
-- set of monomials not $X_i$-involutive multiple of $S^{(i)}$ for all $i \in J$
-### Example
-The command `kbase_mixed(X,Lg[i])` outputs the set of monomials not $X_i$-involutive multiple of $S^{(i)}$ for all $i \in J$. The set is the basis of the quotient regarded as a $K$-vector space.
+> ```Singular
+> kbase_mixed(list X, list Lgi)
+> ```
+> | Parameter | Description |
+> | --------- | ----------- |
+> | `X` | family of variables (Note that X[i-1] = $X_i$ in the paper) |
+> | `Lgi` | list of mixed standard basis in the $i$-th parameter range (`Lg[i]`) |
+> #### Outputs
+> - set of monomials not $X_i$-involutive multiple of $S^{(i)}$ for all $i \in J$
+> #### Example
+> The command `kbase_mixed(X,Lg[i])` outputs the set of monomials not $X_i$-involutive multiple of $S^{(i)}$ for all $i \in J$. The set is the basis of the quotient regarded as a $K$-vector space.
