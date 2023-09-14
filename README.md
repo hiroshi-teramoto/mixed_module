@@ -82,5 +82,10 @@ reduce_mixed_with_E(list X, vector p, module Nc, list Q, ideal E)
 ```Singular
 kbase_mixed(list X, list Lgi)
 ```
+## Parameters
+- `X`: family of variables (Note that X[i-1] = $X_i$ in the paper)
+- `Lgi`: list of mixed standard basis in the $i$-th parameter range (`Lg[i]`)
+## Outputs
+- set of monomials not $X_i$-involutive multiple of $M_i$ for all $i \in J$
 
 
