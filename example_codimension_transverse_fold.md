@@ -8,7 +8,7 @@ ny = 2;
 ring R = (0,a), (x(1..nx),y(1..ny)), (M(imat),C);
 ```
 
-In this implementation, all the parameters in the ring, "a" in the example above, are treated as parameters in comprehensive standard system. The set of all the variables is {x(1..nx), y(1..ny)}. `imat` is a matrix of integer entries to specify the monomial ordering. In this example, `imat` is a $4 \times 4$ matrix,
+In this implementation, all the parameters in the ring, "a" in the example above, are treated as parameters in comprehensive standard system. The set of all the variables is {x(1..nx), y(1..ny)}, which corresponds to $\left\{ x_1, x_2, y_1, y_2 \right\}$ in the paper. `imat` is a matrix of integer entries to specify the monomial ordering. In this example, `imat` is a $4 \times 4$ matrix,
 
 $$
 \begin{pmatrix}
