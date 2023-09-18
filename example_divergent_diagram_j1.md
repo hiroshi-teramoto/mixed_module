@@ -159,7 +159,15 @@ The results of the computation can be summarised as:
 | $c_1 c_4 - c_2 c_3 = 0$ and ($c_2 c_4 \neq 0$ or $c_1 c_4 \neq 0$ or $c_1 c_3 \neq 0$)  | $2$ | $\left( 1, 0, -1, 0 \right)$, $\left( 1, 0, 1, 0 \right)$ |
 | $c_2 c_4 = c_1 c_4 = c_2 c_3 = c_1 c_3 = 0$ and ($c_1 \neq 0$ or $c_2 \neq 0$ or $c_3 \neq 0$ or $c_4 \neq 0$)  | $2$ | $\left( 1, 0, 0, 0 \right)$, $\left( 0, 0, 1, 0 \right)$ |
 
-Here, we show one representative for each connected component. 
+Here, we show one representative for each connected component. In terms of $1$-jet, the result can be written as:
+
+| Representative $\left( c_1, c_2, c_3, c_4 \right)$ | $1$-jets |
+| -------------------------------------------------- | -------- |
+| $\left( 0, 0, 0, 0 \right)$ | $\left( 0, 0 \right)$ |
+| $\left( 1, 0, 0, -1 \right)$, $\left( 1, 0, 0, 1 \right)$ | $\left( x_1, -x_2 \right)$, $\left( x_1, x_2 \right)$ |
+| $\left( 1, 0, -1, 0 \right)$, $\left( 1, 0, 1, 0 \right)$ | $\left( x_1, -x_1 \right)$, $\left( x_1, x_1 \right)$ |
+| $\left( 1, 0, 0, 0 \right)$, $\left( 0, 0, 1, 0 \right)$ | $\left( x_1, 0 \right)$, $\left( 0, x_1 \right)$ |
+
 
 
 
