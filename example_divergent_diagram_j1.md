@@ -148,7 +148,17 @@ To complete the classification of the orbits of $1$-jet,
 - Confirm if the tangent space of each semi-algebraic set is contained in $T \mathcal{G} \left( f \right) + \mathcal{M}_2^2 \mathcal{E}_2^2$.
   - This can be done by computing the mixed standard basis of $T \mathcal{G} \left( f \right) + \mathcal{M}_2^2 \mathcal{E}_2^2$ and reduce the tangent vectors with respect to the standard basis (For detail, see the paper, 4.1.1).
 
-If you confirm above, each connected components of the semi-algebraic sets are contained in a single orbit by using Mather's lemma. To find connected components of the semi-algebraic sets, you can use [CylindricalDecomposition](https://reference.wolfram.com/language/ref/CylindricalDecomposition.html) with the option "Components", for example. 
+If you confirm above, each connected components of the semi-algebraic sets are contained in a single orbit by using Mather's lemma. To find connected components of the semi-algebraic sets, you can use [CylindricalDecomposition](https://reference.wolfram.com/language/ref/CylindricalDecomposition.html) with the option "Components", for example. [Here]((https://github.com/hiroshi-teramoto/mixed_module/blob/main/connectedcomponents.nb) is a sample Mathematica code to do that. Note that this code uses a random perturbation to ensure that the polynomials appearing in the cylindrical algebraic decomposition is quasi-monic. For detail, see Chapter 11, Remark 11.46 in [the book](https://link.springer.com/book/10.1007/3-540-33099-2) due to Saugata Basu, Richard Pollack, and Marie-Françoise Roy. Note that the algorithm involves a random number so run the algorithm repeatedly if you get some error.
+
+The results of the computation can be summarised as:
+
+| Semi-Algebraic Set | # Connected Components | representative $\left( c_1, c_2, c_3, c_4 \right)$ |
+| ----------------- | ----------------------------------------------------------------------- |
+| $c_1 = c_2 = c_3 = c_4 = 0$ | $0$ | $\left( 0, 0, 0, 0 \right)$ |
+| $c_1 c_4 - c_2 c_3 \neq 0$ | $2$ | $\left( 1, 0, 0, -1 \right)$, $\left( 1, 0, 0, 1 \right)$ |
+| $c_1 c_4 - c_2 c_3 = 0$ and ($c_2 c_4 \neq 0$ or $c_1 c_4 \neq 0$ or $c_1 c_3 \neq 0$)  | $2$ | $\left( 1, 0, -1, 0 \right)$, $\left( 1, 0, 1, 0 \right)$ |
+| $c_2 c_4 = c_1 c_4 = c_2 c_3 = c_1 c_3 = 0$ and ($c_1 \neq 0$ or $c_2 \neq 0$ or $c_3 \neq 0$ or $c_4 \neq 0$)  | $2$ | $\left( 1, 0, 0, 0 \right)$, $\left( 0, 0, 1, 0 \right)$ |
+
 
 
 
