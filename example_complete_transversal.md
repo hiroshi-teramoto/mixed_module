@@ -97,5 +97,32 @@ Finally, you are ready to compute comprehensive standard system for $(M_i)_{i \i
 
 By using `Lg`, the complete transversal can be computed as follows:
 ```Singular
+for(i=1;i<=size(Lg);i++){
+	module HK1 = mx^K*freemodule(ny);
+	module REM = HK1;
+	for(j=1;j<=size(HK1);j++){
+		REM[j] = reduce_mixed_with_E(X,REM[j],Lg[i][3][3],Lg[i][4],Lg[i][3][1]);	
+	}
+	if(size(REM) != 0){
+		matrix A = matrix_representation_normalize(REM,kbase_mixed(X,Lg[i]));
+		list L = gauss_elimination_gb(Lg[i][1],Lg[i][2],transpose(A));
 
+		module CT;
+		list list_CT;
+		for(j=1;j<=size(L);j++){
+			CT = 0;
+			for(k=1;k<=size(L[j][4]);k++){
+				CT = CT + HK1[L[j][4][k]];
+			}
+			list_CT = insert(list_CT,list(list(L[j][1],L[j][2]),CT));
+		}
+	}
+	else{
+		module CT;
+		return(list(list(list(E,N),CT)));
+	}
+}
+
+print("complete transversal :");
+list_CT;
 ```
