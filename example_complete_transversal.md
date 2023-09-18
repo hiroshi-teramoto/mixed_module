@@ -95,6 +95,7 @@ Finally, you are ready to compute comprehensive standard system for $(M_i)_{i \i
 
 By using `Lg`, the complete transversal can be computed as follows (the parameter `K` to specify the degree of complete transversal you are looking for):
 ```Singular
+list list_CT = list();
 for(i=1;i<=size(Lg);i++){
 	module HK1 = mx^K*freemodule(ny);
 	module REM = HK1;
@@ -106,7 +107,6 @@ for(i=1;i<=size(Lg);i++){
 		list L = gauss_elimination_gb(Lg[i][1],Lg[i][2],transpose(A));
 
 		module CT;
-		list list_CT;
 		for(j=1;j<=size(L);j++){
 			CT = 0;
 			for(k=1;k<=size(L[j][4]);k++){
@@ -117,10 +117,7 @@ for(i=1;i<=size(Lg);i++){
 	}
 	else{
 		module CT;
-		return(list(list(list(E,N),CT)));
+		list_CT = insert(list_CT,list(list(Lg[i][1],Lg[i][2]),CT));
 	}
 }
-
-print("complete transversal :");
-list_CT;
 ```
