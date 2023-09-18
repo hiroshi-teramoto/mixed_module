@@ -148,7 +148,11 @@ To complete the classification of the orbits of $1$-jet,
 - Confirm if the tangent space of each semi-algebraic set is contained in $T \mathcal{G} \left( f \right) + \mathcal{M}_2^2 \mathcal{E}_2^2$.
   - This can be done by computing the mixed standard basis of $T \mathcal{G} \left( f \right) + \mathcal{M}_2^2 \mathcal{E}_2^2$ and reduce the tangent vectors with respect to the standard basis (For detail, see the paper, 4.1.1).
 
-If you confirm above, each connected components of the semi-algebraic sets are contained in a single orbit by using Mather's lemma. To find connected components of the semi-algebraic sets, you can use [CylindricalDecomposition](https://reference.wolfram.com/language/ref/CylindricalDecomposition.html) with the option "Components".
+If you confirm above, each connected components of the semi-algebraic sets are contained in a single orbit by using Mather's lemma. To find connected components of the semi-algebraic sets, you can use [CylindricalDecomposition](https://reference.wolfram.com/language/ref/CylindricalDecomposition.html) with the option "Components", for example. 
+
+```Mathematica
+
+```
 
 
 
