@@ -18,4 +18,4 @@ To run the codes, in the directory, type
 Singular example_codimension_transverse_fold.exe
 ```
 
-We assume you are familiar with Singular. If not please refer to [the singular manual](https://www.singular.uni-kl.de/Manual/4-3-2/index.htm#SEC_Top).
+We assume you are familiar with Singular. If not please refer to [the singular manual](https://www.singular.uni-kl.de/Manual/4-3-2/index.htm#SEC_Top). If you use windows, one of the ways to install Singular is to install cygwin inclusing Singular packages. 
