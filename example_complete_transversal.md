@@ -82,6 +82,8 @@ Let $T \subset \mathcal{M}_2^2 \mathcal{E}_2^2$ be $\mathbb{R}$ -vector space sa
 
 $$\mathcal{M}_2^2 \mathcal{E}_2^2 \subset T + T \mathcal{G}_1 \left( f \right) + \mathcal{M}_2^3 \mathcal{E}_2^2.$$
 
-where $\mathcal{G}_1$ is the group acting on divergent diagrams with $1$ -jet identity and $f = \left( x_1, x_1 \right)$ . The problem is reduced to find a basis of the quotient,
+where $\mathcal{G}_1$ is the group acting on divergent diagrams with $1$ -jet identity and $f = \left( x_1, x_1 \right)$ . The problem is reduced to find a basis of the quotient as a $\mathbb{R}$-vector space,
 
-$$\mathcal{M}_2^2 \mathcal{E}_2^2 / T \mathcal{G}_1 \left( f \right) + \mathcal{M}_2^3 \mathcal{E}_2^2.$$
+$$\mathcal{M}_2^2 \mathcal{E}_2^2 / \left( T \mathcal{G}_1 \left( f \right) + \mathcal{M}_2^3 \mathcal{E}_2^2 \right).$$
+
+This quotient is isomorphic to 
