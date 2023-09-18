@@ -153,7 +153,7 @@ If you confirm above, each connected components of the semi-algebraic sets are c
 The results of the computation can be summarised as:
 
 | Semi-Algebraic Set | # Connected Components | representative $\left( c_1, c_2, c_3, c_4 \right)$ |
-| ----------------- | ----------------------------------------------------------------------- |
+| ------------------ | ---------------------- | -------------------------------------------------- |
 | $c_1 = c_2 = c_3 = c_4 = 0$ | $0$ | $\left( 0, 0, 0, 0 \right)$ |
 | $c_1 c_4 - c_2 c_3 \neq 0$ | $2$ | $\left( 1, 0, 0, -1 \right)$, $\left( 1, 0, 0, 1 \right)$ |
 | $c_1 c_4 - c_2 c_3 = 0$ and ($c_2 c_4 \neq 0$ or $c_1 c_4 \neq 0$ or $c_1 c_3 \neq 0$)  | $2$ | $\left( 1, 0, -1, 0 \right)$, $\left( 1, 0, 1, 0 \right)$ |
