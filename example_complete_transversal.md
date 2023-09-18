@@ -1,4 +1,25 @@
-Let us explain how to use the library by taking example_complete_transversal.exe (See 4.1.2 Example (complete transversal in the paper, with the degree filtration, for the class 3 in Table.~1) as an example.
+Let us explain how to use the library by taking example_complete_transversal.exe (See 4.1.2 Example (complete transversal in the paper, with the degree filtration, for the class 3 in Table.~1) as an example. In this demonstration, the complete transversal for the class 3 in Table.~1 in the paper, that is, 
+
+$$ j^1 f \left( x \right) = \left( x_1, x_1 \right) + \mathcal{M}_2^2 \mathcal{E}_2^2$$
+
+is computed.
+
+Let $T \subset \mathcal{M}_2^2 \mathcal{E}_2^2$ be $\mathbb{R}$ -vector space satisfying 
+
+$$\mathcal{M}_2^2 \mathcal{E}_2^2 \subset T + T \mathcal{G}_1 \left( f \right) + \mathcal{M}_2^3 \mathcal{E}_2^2.$$
+
+where $\mathcal{G}_1$ is the group acting on divergent diagrams with $1$ -jet identity and $f = \left( x_1, x_1 \right)$ . The problem is reduced to find a basis of the quotient as a $\mathbb{R}$-vector space,
+
+$$\mathcal{M}_2^2 \mathcal{E}_2^2 / \left( T \mathcal{G}_1 \left( f \right) + \mathcal{M}_2^3 \mathcal{E}_2^2 \right).$$
+
+This quotient is isomorphic to $\langle x_1, x_2 \rangle^2 \left( \mathbb{R} \left[ X_1 \right] \_{\langle X_1 \rangle} \right)^2 / M$ , where 
+- $I = \lbrace 1, 2, 3, 4 \rbrace$,
+- $X_1 = \lbrace x_1, x_2, y_1, y_2 \rbrace$,
+- $X_2 = \lbrace y_1 \rbrace$,
+- $X_3 = \lbrace y_2 \rbrace$,
+- $X_4 = \emptyset$,
+and
+- $M = \sum_{j \in I} M_j$ (Expressions of $M_j \ \left( j \in I \right)$ are lengthy and please refer to the paper for details.)
 
 In this example, the definition of the base ring is as follows: 
 
@@ -74,16 +95,7 @@ Finally, you are ready to compute comprehensive standard system for $(M_i)_{i \i
 >  [i][4][j]: $S^{(j+1)}$ in the paper
 > ```
 
-In this demonstration, `Lg` is used to compute the complete transversal for the class 3 in Table.~1 in the paper, that is, 
+By using `Lg`, the complete transversal can be computed as follows:
+```Singular
 
-$$ j^1 f \left( x \right) = \left( x_1, x_1 \right) + \mathcal{M}_2^2 \mathcal{E}_2^2$$
-
-Let $T \subset \mathcal{M}_2^2 \mathcal{E}_2^2$ be $\mathbb{R}$ -vector space satisfying 
-
-$$\mathcal{M}_2^2 \mathcal{E}_2^2 \subset T + T \mathcal{G}_1 \left( f \right) + \mathcal{M}_2^3 \mathcal{E}_2^2.$$
-
-where $\mathcal{G}_1$ is the group acting on divergent diagrams with $1$ -jet identity and $f = \left( x_1, x_1 \right)$ . The problem is reduced to find a basis of the quotient as a $\mathbb{R}$-vector space,
-
-$$\mathcal{M}_2^2 \mathcal{E}_2^2 / \left( T \mathcal{G}_1 \left( f \right) + \mathcal{M}_2^3 \mathcal{E}_2^2 \right).$$
-
-This quotient is isomorphic to 
+```
