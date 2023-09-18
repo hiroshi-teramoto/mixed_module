@@ -126,7 +126,7 @@ for(i=1;i<=size(Lg);i++){
 In this code, `HK1` is the list of monomials of degree `K` with variables `x(1),...,x(nx)`. In the next subsequent lines, the monimials are reduced by the mixed modules. The quotient $\langle x_1, x_2 \rangle^K \left( \mathbb{R} \left[ X_1 \right] \_{\langle X_1 \rangle} \right)^2 / M$ is isomorphic to $\mathbb{R}$ - vector space spanned by the monomials in $\mathbb{R} \left[ X_1 \right]$ that are not $X_j$-involutive multiples of $S^{\left( j \right)}$ for all $j \in I$. The result is saved in the list `REM`. If all the elements of `REM` are zero, the complete transversal can be chosen to be the zero vector space and we are done. Else, by using the gaussian elimination, basis in `REM` is found. The result is saved in the list `list_CT`. The format of this list is as follows:
 
 ```Singular
-[i]: information of mixed standard basis in the parameter range $V(E_i)\V(N_i)$.
+[i]: list of complete transversal in the parameter range $V(E_i)\V(N_i)$.
  [i][1]:
    [i][1][1]: generators of $E_i$
    [i][1][2]: generators of $N_i$
