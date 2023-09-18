@@ -132,7 +132,8 @@ In this code, `HK1` is the list of monomials of degree `K` with variables `x(1),
    [i][1][2]: generators of $N_i$
  [i][2]: complete transversal in the parameter range $V(E_i)\V(N_i)$
    [i][2][j]: $j$-th basis of complete transversal
-> ```
+>
+```
 
 In the current example, the output should be like:
 
