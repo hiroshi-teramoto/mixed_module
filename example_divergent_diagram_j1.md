@@ -134,13 +134,21 @@ If you run this code, you will obtain the following output, where the output for
 
 From this result, we obtain 
 | Constructible Set | Codimension of $T \_{j^1 f} \left( j^1 \mathcal{G} \cdot j^1 f \right)$ |
-| ----------------- | ------------ |
+| ----------------- | ----------------------------------------------------------------------- |
 | $c_1 = c_2 = c_3 = c_4 = 0$ | $4$ |
 | $c_1 c_4 - c_2 c_3 \neq 0$ | $0$ |
 | $c_1 c_4 - c_2 c_3 = 0$ and ($c_2 c_4 \neq 0$ or $c_1 c_4 \neq 0$ or $c_1 c_3 \neq 0$)  | $1$ |
 | $c_2 c_4 = c_1 c_4 = c_2 c_3 = c_1 c_3 = 0$ and ($c_1 \neq 0$ or $c_2 \neq 0$ or $c_3 \neq 0$ or $c_4 \neq 0$)  | $2$ |
 
 This provides the decomposition of $\mathbb{C}^4$. The decomposition in real can be obtained by projecting the constructible sets to $\mathbb{R}^4$, since all the algorithms in this implementation are based upon arithmetic operations in the ground field only and thus if the scalars in the input data, that is, $c_1, \ldots, c_4$, are contained in $\mathbb{R}$, then all the scalars in the output also lie in $\mathbb{R}$. 
+
+To complete the classification of the orbits of $1$-jet, 
+- Confirm if each semi-algebraic set obtained by projecting the constructible set is manifold.
+  - In this specific example, the four semi-algebraic sets are confirmed to be $C^\infty$-manifolds (use the implicit theorem or the constant rank theorem).
+- Confirm if the tangent space of each semi-algebraic set is contained in $T \mathcal{G} \left( f \right) + \mathcal{M}_2^2 \mathcal{E}_2^2$.
+  - This can be done by computing the mixed standard basis of $T \mathcal{G} \left( f \right) + \mathcal{M}_2^2 \mathcal{E}_2^2$ and reduce the tangent vectors with respect to the standard basis (For detail, see the paper, 4.1.1).
+
+If you confirm above, each connected components of the semi-algebraic sets are contained in a single orbit by using Mather's lemma. To find connected components of the semi-algebraic sets, you can use [CylindricalDecomposition](https://reference.wolfram.com/language/ref/CylindricalDecomposition.html) with the option "Components".
 
 
 
