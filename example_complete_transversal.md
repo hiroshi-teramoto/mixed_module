@@ -93,7 +93,7 @@ Finally, you are ready to compute comprehensive standard system for $(M_i)_{i \i
 >  [i][4][j]: $S^{(j+1)}$ in the paper
 > ```
 
-By using `Lg`, the complete transversal can be computed as follows:
+By using `Lg`, the complete transversal can be computed as follows (the parameter `K` to specify the degree of complete transversal you are looking for):
 ```Singular
 for(i=1;i<=size(Lg);i++){
 	module HK1 = mx^K*freemodule(ny);
