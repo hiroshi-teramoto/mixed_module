@@ -150,11 +150,6 @@ To complete the classification of the orbits of $1$-jet,
 
 If you confirm above, each connected components of the semi-algebraic sets are contained in a single orbit by using Mather's lemma. To find connected components of the semi-algebraic sets, you can use [CylindricalDecomposition](https://reference.wolfram.com/language/ref/CylindricalDecomposition.html) with the option "Components", for example. 
 
-```Mathematica
-
-```
-
-
 
 
 
