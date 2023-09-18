@@ -168,7 +168,14 @@ Here, we show one representative for each connected component. In terms of $1$-j
 | $\left( 1, 0, -1, 0 \right)$, $\left( 1, 0, 1, 0 \right)$ | $\left( x_1, -x_1 \right)$, $\left( x_1, x_1 \right)$ |
 | $\left( 1, 0, 0, 0 \right)$, $\left( 0, 0, 1, 0 \right)$ | $\left( x_1, 0 \right)$, $\left( 0, x_1 \right)$ |
 
+Since the induced action to the $1$-jet transforms $\left( x_1, -x_2 \right)$ to $\left( x_1, x_2 \right)$, $\left( x_1, -x_1 \right)$ to $\left( x_1, x_1 \right)$, and $\left( 0, x_1 \right)$ to $\left( x_1, 0 \right)$, respectively, we can get the following list of representative of each orbit.
 
+| Representative | Codimension of the orbit in the $1$-jet space |
+| -------------- | --------------------------------------------- |
+| $\left( x_1, x_2 \right)$ | $0$ |
+| $\left( x_1, x_1 \right)$ | $1$ |
+| $\left( x_1, 0 \right)$  | $2$ |
+| $\left( 0, 0 \right)$  | $4$ |
 
 
 
