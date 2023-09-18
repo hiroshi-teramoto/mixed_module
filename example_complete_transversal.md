@@ -75,4 +75,5 @@ Finally, you are ready to compute comprehensive standard system for $(M_i)_{i \i
 > ```
 
 In this demonstration, `Lg` is used to compute the complete transversal for the class 3 in Table.~1 in the paper, that is, 
+
 $$ j^1 f \left( x \right) = \left( x_1, x_1 \right) + \mathcal{M}_2^2 \mathcal{E}_2^2$$
