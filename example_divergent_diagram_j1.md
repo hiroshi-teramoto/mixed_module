@@ -170,12 +170,14 @@ Here, we show one representative for each connected component. In terms of $1$-j
 
 Since the induced action of $\mathcal{G}$ to the $1$-jet space transforms $\left( x_1, -x_2 \right)$ to $\left( x_1, x_2 \right)$, $\left( x_1, -x_1 \right)$ to $\left( x_1, x_1 \right)$, and $\left( 0, x_1 \right)$ to $\left( x_1, 0 \right)$, respectively, we can get the following list of representative of each orbit. This reproduces the results in Table~1 in the paper.
 
-| Representative | Codimension of the orbit in the $1$-jet space |
-| -------------- | --------------------------------------------- |
+| Representative of $1$-jet | Codimension of the orbit in the $1$-jet space |
+| ------------------------- | --------------------------------------------- |
 | $\left( x_1, x_2 \right)$ | $0$ |
 | $\left( x_1, x_1 \right)$ | $1$ |
 | $\left( x_1, 0 \right)$  | $2$ |
 | $\left( 0, 0 \right)$  | $4$ |
+
+For each representative, you can investigate the higher jets by using complete transversal. For the second representative, $\left( x_1, x_1 \right)$, its $2$-jet is investigated in [example_complete_transversal.exe](https://github.com/hiroshi-teramoto/mixed_module/blob/main/example_complete_transversal.md).
 
 
 
