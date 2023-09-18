@@ -12,4 +12,10 @@ To use the libraries, download all the files and place them into a single direct
 * [example_complete_transversal.exe](https://github.com/hiroshi-teramoto/mixed_module/blob/main/example_complete_transversal.md)
   - See 4.1.2 Example: [complete transversal](https://iopscience.iop.org/article/10.1088/0951-7715/10/1/017) (with the degree filtration for class 3 in Table.~1 in the paper)
 
+To run the codes, in the directory, type 
+
+```
+Singular example_codimension_transverse_fold.exe
+```
+
 We assume you are familiar with Singular. If not please refer to [the singular manual](https://www.singular.uni-kl.de/Manual/4-3-2/index.htm#SEC_Top).
