@@ -1,8 +1,6 @@
-Let us explain how to use the library by taking example_complete_transversal.exe (See 4.1.2 Example (complete transversal in the paper, with the degree filtration, for the class 3 in Table.~1) as an example. In this demonstration, the complete transversal for the class 3 in Table.~1 in the paper, that is, 
+Let us explain how to use the library by taking example_complete_transversal.exe (See 4.1.2 Example (complete transversal in the paper, with the degree filtration, for the class 3 in Table.~1) as an example. In this demonstration, the complete transversal is computed for the class 3 in Table.~1 in the paper, that is, 
 
-$$ j^1 f \left( x \right) = \left( x_1, x_1 \right) + \mathcal{M}_2^2 \mathcal{E}_2^2$$
-
-is computed.
+$$ j^1 f \left( x \right) = \left( x_1, x_1 \right) + \mathcal{M}_2^2 \mathcal{E}_2^2.$$
 
 Let $T \subset \mathcal{M}_2^2 \mathcal{E}_2^2$ be $\mathbb{R}$ -vector space satisfying 
 
