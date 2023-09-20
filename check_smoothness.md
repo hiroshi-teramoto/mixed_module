@@ -55,6 +55,57 @@ Specifically, `size(L[i][4])` is the size of list of indices of independent row 
 
 The remainder of the code, 
 ```Singular
+list Lrank;
+for(i=1;i<=size(L);i++){
+	int thereis = 0;
+	int rk = size(L[i][4]);
 
+	for(j=1;j<=size(Lrank);j++){
+		if(rk == Lrank[j][1]){
+			thereis = 1;
+			Lrank[j][2] = insert(Lrank[j][2],list(L[i][1],L[i][2]));
+			break;
+		}
+	}
+	if(!thereis){
+		Lrank = insert(Lrank,list(rk,list(list(L[i][1],L[i][2]))));
+	}
+	kill thereis, rk;
+}
+
+for(i=1;i<=size(Lrank);i++){
+	Lrank[i][2] = addcons(Lrank[i][2]);
+	for(j=1;j<=size(Lrank[i][2]);j++){
+		Lrank[i][2][j][1] = radical_ideal(Lrank[i][2][j][1]);
+		Lrank[i][2][j][2] = reduction_by_ideal(Lrank[i][2][j][2],Lrank[i][2][j][1]);
+		Lrank[i][2][j][2] = radical_ideal(Lrank[i][2][j][2]);
+	}
+}
 ```
-computes the rank of the matrix `dE` in each parameter ranges and combine and simplify parameter ranges on which the matrix `dE` has the same rank. The result is saved in the list `Lrank`.
+computes the rank of the matrix `dE` in each parameter ranges and combine and simplify parameter ranges on which the matrix `dE` has the same rank. The result is saved in the list `Lrank`. The format of `Lrank` is as follows:
+
+> ```Singular
+> [i]: the information of the rank in the $i$-th parameter range
+>  [i][1]: rank (= `rk`) of the matrix `dE` in the $i$-th parameter range
+>  [i][2]: list of locally closed sets on which the rank of `dE` is `rk`
+>  [i][2][j]: the information of the $j$-th locally closed set $V(E_{ij})\V(N_{ij})$
+>  [i][2][j][1]: generators of ideal $E_{ij}$
+>  [i][2][j][2]: generators of ideal $N_{ij}$
+> ```
+
+For example, for the third semi-algebraic set in the list, the output should be like, 
+```Singular
+Rank of the defining equations of E on V(E)V(N)
+[1]:
+   [1]:
+      1
+   [2]:
+      [1]:
+         [1]:
+            _[1]=(-c(1)*c(4)+c(2)*c(3))
+         [2]:
+            _[1]=(c(2)*c(4))
+            _[2]=(c(1)*c(4))
+            _[3]=(c(1)*c(3))
+```
+which means for the parameter range $V \left( E \right) \setminus V \left( N \right)$, the rank of the rank of `dE` is constant. By using the constant rank theorem, we can conclude that $V \left( E \right) \setminus V \left( N \right)$ is a smooth manifold. You can try the same computation for the other semi-algebraic sets as well by using the source code.
