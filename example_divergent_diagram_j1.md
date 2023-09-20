@@ -179,7 +179,7 @@ Since the induced action of $\mathcal{G}$ to the $1$-jet space transforms $\left
 
 For each representative, you can investigate the higher jets by using complete transversal. For the second representative, $\left( x_1, x_1 \right)$, its $2$-jet is investigated in [example_complete_transversal.exe](https://github.com/hiroshi-teramoto/mixed_module/blob/main/example_complete_transversal.md). 
 
-[^1]: Note that the original Mather's lemma only tells you whether a connected component is contained in a single orbit or not and whether more than one connected components are contained in a single orbit should be checked manually in the current version. 
+[^1]: Note that the original Mather's lemma only tells you whether a connected component is contained in a single orbit or not and whether more than one connected components are contained in a single orbit should be checked manually in the current version of this library.
 
 
 
