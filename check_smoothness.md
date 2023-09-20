@@ -1,1 +1,1 @@
-Let us explain how to confirm if a given semi-algebraic set $V \left( E \right) \setminus V \left( N \right)$ is a smooth manifold by using the constant rank theorem. 
+Let us explain how to confirm if a given semi-algebraic set $V \left( E \right) \setminus V \left( N \right)$ defined by the ideals $E$ and $N$ is a smooth manifold by using the constant rank theorem by taking semi-algebraic sets appearing in the classificaiton of divergent diagram as examples. In the classification, we got the following list of semi-algebraic sets: 
