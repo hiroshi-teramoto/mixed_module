@@ -168,7 +168,7 @@ Here, we show one representative for each connected component. In terms of $1$-j
 | $\left( 1, 0, -1, 0 \right)$, $\left( 1, 0, 1, 0 \right)$ | $\left( x_1, -x_1 \right)$, $\left( x_1, x_1 \right)$ |
 | $\left( 1, 0, 0, 0 \right)$, $\left( 0, 0, 1, 0 \right)$ | $\left( x_1, 0 \right)$, $\left( 0, x_1 \right)$ |
 
-Since the induced action of $\mathcal{G}$ to the $1$-jet space transforms $\left( x_1, -x_2 \right)$ to $\left( x_1, x_2 \right)$, $\left( x_1, -x_1 \right)$ to $\left( x_1, x_1 \right)$, and $\left( 0, x_1 \right)$ to $\left( x_1, 0 \right)$　[^1], respectively, we can get the following list of representative of each orbit. This reproduces the results in Table~1 in the paper.
+Since the induced action of $\mathcal{G}$ to the $1$-jet space transforms $\left( x_1, -x_2 \right)$ to $\left( x_1, x_2 \right)$, $\left( x_1, -x_1 \right)$ to $\left( x_1, x_1 \right)$, and $\left( 0, x_1 \right)$ to $\left( x_1, 0 \right)$[^1], respectively, we can get the following list of representative of each orbit. This reproduces the results in Table~1 in the paper.
 
 | Representative of $1$-jet | Codimension of the orbit in the $1$-jet space |
 | ------------------------- | --------------------------------------------- |
@@ -179,7 +179,7 @@ Since the induced action of $\mathcal{G}$ to the $1$-jet space transforms $\left
 
 For each representative, you can investigate the higher jets by using complete transversal. For the second representative, $\left( x_1, x_1 \right)$, its $2$-jet is investigated in [example_complete_transversal.exe](https://github.com/hiroshi-teramoto/mixed_module/blob/main/example_complete_transversal.md). 
 
-[1]: Note that...
+[^1]: Note that the original Mather's lemma only tells you whether a connected component is contained in a single orbit or not and whether more than one connected components are contained in a single orbit should be checked manually in the current version. 
 
 
 
