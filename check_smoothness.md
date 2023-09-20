@@ -33,5 +33,18 @@ list L = gauss_elimination_gb(E,N,dE);
 ```
 Gaussian elimination is done in the parameter range $V \left( E \right) \setminus V \left( N \right)$.
 
-
+> ```Singular
+> reduce_mixed_with_E(list X, vector p, module Nc, list Q, ideal E)
+> ```
+> | Parameter | Description |
+> | --------- | ----------- |
+> | `X` | family of variables (Note that X[i-1] = $X_i$ in the paper) |
+> | `p` | input vector to be reduced |
+> | `Nc` | local cohomology of $M_1$ |
+> | `Q` | list of mixed standard basis $S^{(j+1)}$ for $j \ge 1$ |
+> | `E` | ideal in the polynomial ring of parameters (`Nc` and `Q` is defined on the parameter range $V(E) \setminus V(N)$ |
+> #### Output
+> - the reduced normal form of `p`, that is, $\mathrm{NF} \_{\textnormal{tail}} \left( p \middle| \left( S^{\left( j \right)} \right)_{j \in J} \right)$ in the paper
+> #### Example
+> Suppose `p` is a vector you want to reduce by the comprehensive standard system of the $i$-th parameter range $V(E_i) \setminus V(N_i)$, that is, `Lg[i]`. You can compute that by the command `reduce_mixed_with_E(X,p,Lg[i][3][3],Lg[i][4],Lg[i][3][1])`.
 
