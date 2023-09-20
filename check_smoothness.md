@@ -50,3 +50,11 @@ Gaussian elimination is done in the parameter range $V \left( E \right) \setminu
 >  [i][3]: row echelon form of the matrix `A`
 >  [i][4]: list of indices of independent row vectors
 > ```
+
+Specifically, `size(L[i][4])` is the size of list of indices of independent row vectors that is the rank of the matrix `dE` in the parameter range $V \left( E_i \right) \setminus V \left( N_i \right)$.
+
+The remainder of the code, 
+```Singular
+
+```
+computes the rank of the matrix `dE` in each parameter ranges and combine and simplify parameter ranges on which the matrix `dE` has the same rank. The result is saved in the list `Lrank`.
