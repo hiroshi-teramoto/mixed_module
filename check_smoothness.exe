@@ -24,12 +24,12 @@ ring R = (0,c(1..4)), x, (M(imat),C);
 // ideal N = c(1)*c(4)-c(2)*c(3);
 
 // #3
-// ideal E = c(2)*c(4), c(1)*c(4), c(2)*c(3), c(1)*c(3);
-// ideal N = c(1), c(2), c(3), c(4);
-
-// #4
 ideal E = c(1)*c(4)-c(2)*c(3);
 ideal N = c(2)*c(4), c(1)*c(4), c(1)*c(3);
+
+// #4
+// ideal E = c(2)*c(4), c(1)*c(4), c(2)*c(3), c(1)*c(3);
+// ideal N = c(1), c(2), c(3), c(4);
 
 def Rc = par2varRing(E)[1];
 setring(Rc);
