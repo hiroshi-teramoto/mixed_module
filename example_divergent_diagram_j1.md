@@ -144,7 +144,7 @@ This provides the decomposition of $\mathbb{C}^4$. The decomposition in real can
 
 To complete the classification of the orbits of $1$-jet, 
 - Confirm if each semi-algebraic set obtained by projecting the constructible set is manifold.
-  - In this specific example, the four semi-algebraic sets are confirmed to be $C^\infty$-manifolds (use the implicit theorem or the constant rank theorem).
+  - [check_smoothness.exe](https://github.com/hiroshi-teramoto/mixed_module/blob/main/check_smoothness.md)
 - Confirm if the tangent space of each semi-algebraic set is contained in $T \mathcal{G} \left( f \right) + \mathcal{M}_2^2 \mathcal{E}_2^2$.
   - This can be done by computing the mixed standard basis of $T \mathcal{G} \left( f \right) + \mathcal{M}_2^2 \mathcal{E}_2^2$ and reduce the tangent vectors with respect to the standard basis (For detail, see the paper, 4.1.1). If this is not the case, the dimension of the orbit is strictly smaller than the dimension of the semi-algebraic set. This happens when the moduli appears.
 
