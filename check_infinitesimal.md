@@ -25,10 +25,16 @@ If the rank of the Jacobi matrix is constant over $V \left( E \right) \setminus 
 list L = gauss_elimination(E,N,transpose(tvecs));
 ```
 
+Then, for each $i$, `L[i][3]` is the row echelon form of the transposed matrix `tvecs` over the parameter range `V(L[i][1]) \ V(L[i][2])`. The set of non-zero row vectors of `L[i][3]` is a basis of the tangent space of $V \left( E \right) \setminus V \left( N \right)$ over the parameter range `V(L[i][1]) \ V(L[i][2])`. Suppose $v = \left( v_1, \cdots, v_m \right)$ be a one of the non-zero row vectors, the corresponding vector in the tangent space of the $1$-jet space is 
 
+$$ v_1 \frac{\partial j^1 f}{\partial c_1} + \cdots + v_m \frac{\partial j^1 f}{\partial c_m} $$
 
-The flow of the computation is as follows:
+This conversion is done in the code as:
 
-This page is under construction. Please see the source code ([check_infinitesimal.exe](https://github.com/hiroshi-teramoto/mixed_module/blob/main/check_infinitesimal.exe)).
+```Singular
+module C = TW*transpose(L[i][3]);
+```
+
+The remainder of the code checks if each basis is contained in $T \mathcal{G} \left( f \right) + \mathcal{M}_2^2 \mathcal{E}_2^2$. 
 
 [^1]: If this test is failed, the dimension of the orbit is strictly smaller than the dimension of the semi-algebraic set. This happens when the moduli appears. In the current version of this library, we have not yet implemented a systematic classification algorithm in this case.
