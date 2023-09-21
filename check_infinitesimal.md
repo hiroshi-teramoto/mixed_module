@@ -35,6 +35,6 @@ This conversion is done in the code as:
 module C = TW*transpose(L[i][3]);
 ```
 
-The remainder of the code checks if each basis is contained in $T \mathcal{G} \left( f \right) + \mathcal{M}_2^2 \mathcal{E}_2^2$. 
+The remainder of the code checks if each basis is contained in $T \mathcal{G} \left( f \right) + \mathcal{M}_2^2 \mathcal{E}_2^2$. This can be checked by reducing the membership problem to a membership problem of a mixed module, latter can be solved by computing the mixed standard basis of the mixed module. For detail, please see the code ([check_infinitesimal.exe](https://github.com/hiroshi-teramoto/mixed_module/blob/main/check_infinitesimal.exe)).
 
 [^1]: If this test is failed, the dimension of the orbit is strictly smaller than the dimension of the semi-algebraic set. This happens when the moduli appears. In the current version of this library, we have not yet implemented a systematic classification algorithm in this case.
