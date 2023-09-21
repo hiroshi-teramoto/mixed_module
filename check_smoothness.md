@@ -82,7 +82,7 @@ for(i=1;i<=size(Lrank);i++){
 	}
 }
 ```
-computes the rank of the matrix `dE` in each parameter ranges and combine and simplify parameter ranges on which the matrix `dE` has the same rank. The result is saved in the list `Lrank`. The format of `Lrank` is as follows:
+computes the rank of the matrix `dE` in each parameter range and combine and simplifies parameter ranges on which the matrix `dE` has the constant rank. The result is saved in the list `Lrank`. The format of `Lrank` is as follows:
 
 > ```Singular
 > [i]: the information of the rank in the $i$-th parameter range
@@ -93,7 +93,7 @@ computes the rank of the matrix `dE` in each parameter ranges and combine and si
 >  [i][2][j][2]: generators of ideal $N_{ij}$
 > ```
 
-For example, for the third semi-algebraic set in the list, the output should be like, 
+For example, for the third semi-algebraic set in the list, i.e. $E = \langle c_1 c_4 - c_2 c_3 \rangle$ and $N = \langle c_2 c_4, c_1 c_4, c_1 c_3 \rangle$, the output should be like, 
 ```Singular
 Rank of the defining equations of E on V(E)V(N)
 [1]:
@@ -108,4 +108,4 @@ Rank of the defining equations of E on V(E)V(N)
             _[2]=(c(1)*c(4))
             _[3]=(c(1)*c(3))
 ```
-which means for the parameter range $V \left( E \right) \setminus V \left( N \right)$, the rank of the rank of `dE` is constant. By using the constant rank theorem, we can conclude that $V \left( E \right) \setminus V \left( N \right)$ is a smooth manifold. You can try the same computation for the other semi-algebraic sets as well by using the source code.
+which means for the parameter range $V \left( E \right) \setminus V \left( N \right)$, the rank of the rank of `dE` is $1$. By using the constant rank theorem, we can conclude that $V \left( E \right) \setminus V \left( N \right)$ is a smooth manifold. You can try the same computation for the other semi-algebraic sets as well by using the source code.
