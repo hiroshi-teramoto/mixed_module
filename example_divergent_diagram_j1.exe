@@ -4,11 +4,6 @@ LIB "ainvar.lib";
 LIB "atkins.lib";
 LIB "zeroset.lib";
 
-// LIB "../band/C3_sym/matrix_representation.lib";
-// LIB "../band/C3_sym/gram_schmidt.lib";
-// LIB "../band/C3_sym/extract_tangent_w.lib";
-// LIB "../band/C3v_sym/calc_gradients.lib";
-// LIB "infinitesimal.lib";
 LIB "cssm_multi_v2.lib";
 LIB "addcons.lib";
 LIB "local_cohomology.lib";
