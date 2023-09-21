@@ -69,8 +69,8 @@ Finally, you are ready to compute comprehensive standard system for $(M_i)_{i \i
 >  [i][3]: information of local cohomologies and standard basis of $M_1$ in the parameter range $V(E_i)\V(N_i)$.
 >    [i][3][1]: $E_i$
 >    [i][3][2]: $N_i$
->    [i][3][3]: local cohomology of $M_1$
->    [i][3][4]: standard basis of $M_1$ ($S^{(1)}$ in the paper)
+>    [i][3][3]: standard basis of $M_1$ ($S^{(1)}$ in the paper)
+>    [i][3][4]: local cohomology of $M_1$
 >  [i][4][j]: $S^{(j+1)}$ in the paper
 > ```
 
