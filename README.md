@@ -1,5 +1,5 @@
 # mixed_module
-Implementation of Algorithms in the paper [Comprehensive Standard System for Generalized Mixed Module and its Application to Singularity Theory](https://www.worldscientific.com/doi/abs/10.1142/S0219498824502219?journalCode=jaa) by Hiroshi Teramoto and Katsusuke Nabeshima (in what follows, we denote this paper as the paper.)
+Implementation of Algorithms in the paper [Comprehensive Standard System for Generalized Mixed Module and its Application to Singularity Theory](https://www.worldscientific.com/doi/abs/10.1142/S0219498824502219?journalCode=jaa) by Hiroshi Teramoto and Katsusuke Nabeshima (In what follows, we denote this paper as the paper.)
 
 To use the libraries, download all the files and place them into a single directory. You will need Singular installed on your machine. We have prepared three examples to demonstrate the libraries:
 
