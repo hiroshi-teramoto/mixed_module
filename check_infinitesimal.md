@@ -1,4 +1,4 @@
-In [the tutorial](https://github.com/hiroshi-teramoto/mixed_module/blob/main/check_infinitesimal.md), the semi-algebraic sets in the list,
+In [the tutorial](https://github.com/hiroshi-teramoto/mixed_module/blob/main/check_smoothness.md), the semi-algebraic sets in the list,
 
 
 
