@@ -19,3 +19,16 @@ Singular example_codimension_transverse_fold.exe
 ```
 
 We assume you are familiar with Singular. If not please refer to [the singular manual](https://www.singular.uni-kl.de/Manual/4-3-2/index.htm#SEC_Top). If you use windows, one of the ways to install Singular is to install [cygwin](https://www.cygwin.com/) inclusing Singular packages. You can download Singular from [here](https://www.singular.uni-kl.de/index.php/singular-download.html).
+
+# Important notice:
+If you use Singular of version(4.3.x), you'll get an error 
+```Singular
+     ? not enough variables for ordering 1 (dp)
+     ? error occurred in or before standard.lib::par2varRing line 520: `
+    return (RL);`
+     ? leaving standard.lib::par2varRing (520)
+     skipping text from `;` error at token `)`
+``` 
+Older Singular versions (4.0.x) used strings to construct the new ring in par2varRing, while newer versions(4.3.x) used lists
+(which had this bug for matrix orderings). It is fixed with commit 3138067d4015d2804d700e33002470444fcd2210
+of Singular (see https://github.com/singular/singular) and will be included in the next version of Singular. Tentatively, to avoid the error, use older Singular version (4.0.x) or replace the new standard.lib by the old one. 
