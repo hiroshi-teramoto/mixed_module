@@ -20,7 +20,7 @@ Singular example_codimension_transverse_fold.exe
 
 We assume you are familiar with Singular. If not please refer to [the singular manual](https://www.singular.uni-kl.de/Manual/4-3-2/index.htm#SEC_Top). If you use windows, one of the ways to install Singular is to install [cygwin](https://www.cygwin.com/) inclusing Singular packages. You can download Singular from [here](https://www.singular.uni-kl.de/index.php/singular-download.html).
 
-# Important notice:
+## Important notice:
 If you use Singular of version(4.3.x), you'll get an error 
 ```Singular
      ? not enough variables for ordering 1 (dp)
